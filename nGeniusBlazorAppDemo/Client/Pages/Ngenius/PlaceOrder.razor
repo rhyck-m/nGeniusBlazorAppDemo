@@ -1,0 +1,18 @@
+﻿@page "/ngenius/checkout"
+@inherits PlaceOrderBase
+
+
+<h3>Checkout</h3>
+
+@if (IsMountingCard)
+{
+    <div class="card-mount-loader">
+    </div>
+}
+
+
+<div id="mount-id" style="height: 230px" class="mt-4 mb-2"></div>
+
+<button class="w-100 btn btn-primary btn-lg" type="button" @onclick="@MakePayment">Pay Now</button>
+
+
